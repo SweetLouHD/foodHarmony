@@ -4,20 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/markcunzolo/foodHarmony.git"
+    "url": "git+https://github.com/SweetLouHD/foodHarmony.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/markcunzolo/foodHarmony/issues"
+    "url": "https://github.com/SweetLouHD/foodHarmony/issues"
   },
-  "homepage": "https://github.com/markcunzolo/foodHarmony#readme",
+  "homepage": "https://github.com/SweetLouHD/foodHarmony#readme",
   "dependencies": {
+    "ejs": "~1.0.0",
+    "express": "~4.9.8",
     "j-toker": "0.0.10-beta3",
-    "bootpag": "1.0.7"
+    "bootpag": "~1.0.7"
   }
 }
