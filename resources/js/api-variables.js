@@ -1,5 +1,5 @@
 //Base api location
-var apiEndpointBase = 'https://food-harmony.herokuapp.com';
+var apiEndpointBase = '//food-harmony.herokuapp.com';
 
 //Api location for types of restaurants
 var apiRestaurantTypes = apiEndpointBase + '/types';
@@ -17,4 +17,4 @@ var apiUpdateLikes = apiEndpointBase + '/restaurant_likes';
 var apiContactUs = apiEndpointBase + '/contact_us';
 
 //Location dynamic images are being served from
-var dynIMGBaseURL = 'http://lous.work/dynIMG/foodHarmony';
+var dynIMGBaseURL = '//lous.work/dynIMG/foodHarmony';
