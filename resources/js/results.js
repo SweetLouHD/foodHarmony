@@ -549,7 +549,7 @@ function addLike(resId) {
       success: function(result) {
         if(debug){console.log("> Updating like counter and reloading results.");}
         apiResult = JSON.stringify(result);
-        filter(apiResult);
+        filter(1, apiResult);
       },
       error: function() {
         if(debug){console.warn("> Failed to update like.");}
@@ -627,7 +627,7 @@ function addDislike(resId) {
       success: function(result) {
         if(debug){console.log("> Updating dislike counter and reloading results.");}
         apiResult = JSON.stringify(result);
-        filter(apiResult);
+        filter(1, apiResult);
       },
       error: function() {
         if(debug){console.warn("> Failed to update dislike.");}
