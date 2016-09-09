@@ -3,7 +3,7 @@ var express = require("express");
 
  /* serves main page */
  app.get("/", function(req, res) {
-    res.sendfile('login.html')
+    res.sendfile('index.html')
  });
 
  /* serves all the static files */
