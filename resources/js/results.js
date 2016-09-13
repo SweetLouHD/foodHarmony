@@ -19,6 +19,7 @@ var uID = 0,
     resultLayout = 3,
     perPage = 9,
     numPages,
+    currentPage,
     filterType = "",
     filterCuisine = "",
     filterCost = 5,
@@ -549,7 +550,7 @@ function addLike(resId) {
       success: function(result) {
         if(debug){console.log("> Updating like counter and reloading results.");}
         apiResult = JSON.stringify(result);
-        filter(1, apiResult);
+        filter(currentPage, apiResult);
       },
       error: function() {
         if(debug){console.warn("> Failed to update like.");}
@@ -627,7 +628,7 @@ function addDislike(resId) {
       success: function(result) {
         if(debug){console.log("> Updating dislike counter and reloading results.");}
         apiResult = JSON.stringify(result);
-        filter(1, apiResult);
+        filter(currentPage, apiResult);
       },
       error: function() {
         if(debug){console.warn("> Failed to update dislike.");}
@@ -725,7 +726,8 @@ function setFilters() {
   } else {
     startPage = 1;
   }
-
+  currentPage = startPage;
+  
   filter(startPage, apiResult);
 }
 
@@ -900,6 +902,7 @@ $().ready(function() {
   } else {
     startPage = 1;
   }
+  currentPage = startPage;
   
   /** Define elements that will use jQuery UI tooltips */
   $('#resultsContainer').tooltip();
