@@ -1,5 +1,5 @@
 //Base api location
-var apiEndpointBase = 'https://food-harmony.herokuapp.com';
+var apiEndpointBase = 'https://foodharmonyapi.herokuapp.com';
 
 //Api location for types of restaurants
 var apiRestaurantTypes = apiEndpointBase + '/types';
